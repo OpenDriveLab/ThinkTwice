@@ -2,6 +2,7 @@
 
 > **Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Driving** [CVPR 2023] 
 >![pipeline](src/pipeline.PNG)  
+> [arXiv Paper](https://arxiv.org/abs/2305.06242)
 
 ## Demo Video
 [![Demo](src/demo_start.png)](https://youtu.be/ZhSH63O4Hsg)
