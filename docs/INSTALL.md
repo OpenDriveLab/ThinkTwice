@@ -35,8 +35,8 @@ export LD_PRELOAD=YOUR_CONDA_PATH/envs/thinktwice/lib/libstdc++.so.6.0.29
 **e. Install mmcv-full, mmdet, and mmseg**
 ```shell
 pip install mmcv-full==1.7.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.12/index.html
-pip install mmdet
-pip install mmsegmentation
+pip install mmdet==2.28.2
+pip install mmsegmentation==0.30.0
 ```
 
 
