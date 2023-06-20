@@ -82,18 +82,19 @@ If this work is helpful for your research, please consider citing the following 
 ```
 
 ## Related Resources
-Many thanks to the open source community!
+Many thanks to the open-source community!
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) 
-- [Carla](https://github.com/carla-simulator/carla)
+- [End-to-end Autonomous Driving Survey](https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving) (:rocket:Ours!)
 - [TCP](https://github.com/OpenPerceptionX/TCP) (:rocket:Ours!)
-- [Roach](https://github.com/zhejz/carla-roach)
 - [BEVFormer](https://github.com/fundamentalvision/BEVFormer) (:rocket:Ours!)
+- [UniAD](https://github.com/OpenDriveLab/UniAD) (:rocket:Ours!)
+- [ST-P3](https://github.com/OpenPerceptionX/ST-P3) (:rocket:Ours!)
+- [Carla](https://github.com/carla-simulator/carla)
+- [Roach](https://github.com/zhejz/carla-roach)
 - [BEVDepth](https://github.com/Megvii-BaseDetection/BEVDepth)
 - [Transfuser](https://github.com/autonomousvision/transfuser)
 - [LAV](https://github.com/dotchen/LAV)
 - [Interfuser](https://github.com/opendilab/InterFuser)
-- [UniAD](https://github.com/OpenDriveLab/UniAD) (:rocket:Ours!)
-- [ST-P3](https://github.com/OpenPerceptionX/ST-P3) (:rocket:Ours!)
 - [IBISCape](https://github.com/AbanobSoliman/IBISCape)
 - [mmdet3d](https://github.com/open-mmlab/mmdetection3d)
