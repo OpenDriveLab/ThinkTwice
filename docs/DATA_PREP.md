@@ -1,7 +1,8 @@
 # Prepare Dataset
 
 ## Script to Collect for One Xml File
-Due to the huge size of the dataset (189K frames - 8TB, 2M frames - 85TB), we provide the instructations to generate the dataset. If the size is still too large for your device, techniques to reduce the size of files could be explored. We look forward to your contributions:).
+Due to the huge size of the dataset (189K frames - 8TB, 2M frames - 85TB), we provide the instructations to generate the dataset. If the size is still too large for your device, techniques to reduce the size of files could be explored. We look forward to your contributions:). 
+Update: If your disk space is limited, you could consider trying the techniques mentioned in the compression section of this awesome repo [carla_garge](https://github.com/autonomousvision/carla_garage/blob/main/docs/engineering.md).
 
 The command to collect data from one .xml file is:
 
@@ -55,8 +56,10 @@ python generate_metadata.py #It could take a day for the 2M frames dataset.
 
 - There are several coordinate system within the code: Unreal, Roach, Lidar, Camera, GNSS, Control, etc. If you want to modify or add any new component, visualizations to check whether they align with existing ones are strongly recommended
 
-- You could modify [leaderboard/team_code/roach_ap_agent_data_collection.py](../leaderboard/team_code/roach_ap_agent_data_collection.py) to save the information you need for training.
+- You could modify [leaderboard/team_code/roach_ap_agent_data_collection.py](../leaderboard/team_code/roach_ap_agent_data_collection.py) to save the information you need for training. 
 
 - For the size of images, we collect images at 900x1600 and we downsample them into 448x896 to save GPU memory. Thus, you may change the collected images' resolution (as well as depth and segmentation labels) to save disk space.
 
 - For traffic light segmentation in images, we wrote rules regarding color to generate GT, which might not be accurate. You could consider use the build-in API of Carla to generate the GT.
+  
+- To reduce the data collection cost, you could first only collect data from Town01, Town03, Town04, and Town06 for training as in Appendix B Table 1 of [TCP](https://arxiv.org/pdf/2206.08129.pdf) and do not conduct open-loop validation, which could approximately half the needed data. When the model achieves *current_throttle_brake_offset < 0.1* and *longitudinal_offset < 0.2* in training set, it is considered fitting well.
