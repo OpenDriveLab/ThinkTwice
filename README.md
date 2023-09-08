@@ -1,9 +1,10 @@
-# ThinkTwice: A SOTA Decoder for End-to-End Autonomous Driving under BEV
+# Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Driving
 
-> **Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Driving** [CVPR 2023] 
->![pipeline](src/pipeline.PNG)  
-> [arXiv Paper](https://arxiv.org/abs/2305.06242)
+- A SOTA Decoder for End-to-End Autonomous Driving under BEV
+- [arXiv Paper](https://arxiv.org/abs/2305.06242) (CVPR 2023)
 
+![pipeline](src/pipeline.PNG)
+ 
 ## Demo Video
 [![Demo](src/demo_start.png)](https://youtu.be/ZhSH63O4Hsg)
 
