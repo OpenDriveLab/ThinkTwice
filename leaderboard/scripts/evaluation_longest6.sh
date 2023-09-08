@@ -24,7 +24,7 @@ export TEAM_CONFIG=$6
 export CHECKPOINT_ENDPOINT=closed_loop_eval_log/results_$8.json
 export SCENARIOS=leaderboard/data/scenarios/$7.json
 export SAVE_PATH=closed_loop_eval_log/eval_log/$8
-
+export BENCHMARK=longest6
 
 
 

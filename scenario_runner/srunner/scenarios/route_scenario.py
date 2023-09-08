@@ -49,7 +49,7 @@ from srunner.scenariomanager.scenarioatomics.atomic_criteria import (CollisionTe
                                                                      ActorSpeedAboveThresholdTest)
 
 SECONDS_GIVEN_PER_METERS = 0.4
-
+import os
 NUMBER_CLASS_TRANSLATION = {
     "Scenario1": ControlLoss,
     "Scenario2": FollowLeadingVehicle,
@@ -409,7 +409,12 @@ class RouteScenario(BasicScenario):
         }
 
         amount = town_amount[config.town] if config.town in town_amount else 0
-
+        if os.environ["BENCHMARK"] == "town05long":
+            amount = 120
+            print("----------------Eval with Town05 Long, amount=120", flush=True)
+        if os.environ["BENCHMARK"] == "longest6":
+            amount = 500
+            print("----------------Eval with Longest6, amount=500", flush=True)
         new_actors = CarlaDataProvider.request_new_batch_actors('vehicle.*',
                                                                 amount,
                                                                 carla.Transform(),

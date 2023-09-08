@@ -24,7 +24,10 @@ PENALTY_COLLISION_VEHICLE = 0.60
 PENALTY_COLLISION_STATIC = 0.65
 PENALTY_TRAFFIC_LIGHT = 0.70
 PENALTY_STOP = 0.80
-
+import os
+if os.environ["BENCHMARK"] == "longest6":
+    PENALTY_STOP = 1.0
+    print("----------------Eval with Longest6, PENALTY_STOP=1.0")
 
 class RouteRecord():
     def __init__(self):

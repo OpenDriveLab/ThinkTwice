@@ -93,5 +93,6 @@ Many thanks to the open-source community!
 - [Carla](https://github.com/carla-simulator/carla)
 - [Roach](https://github.com/zhejz/carla-roach)
 - [Transfuser](https://github.com/autonomousvision/transfuser)
+- [CARLA_GARGE](https://github.com/autonomousvision/carla_garage)
 - [LAV](https://github.com/dotchen/LAV)
 - [IBISCape](https://github.com/AbanobSoliman/IBISCape)

@@ -12,7 +12,7 @@ import carla
 
 from srunner.scenariomanager.carla_data_provider import CarlaDataProvider
 from srunner.scenarios.basic_scenario import BasicScenario
-
+import os
 
 BACKGROUND_ACTIVITY_SCENARIOS = ["BackgroundActivity"]
 
@@ -66,7 +66,12 @@ class BackgroundActivity(BasicScenario):
             amount = self.town_amount[town_name]
         else:
             amount = 0
-
+        if os.environ["BENCHMARK"] == "town05long":
+            amount = 120
+            print("----------------Eval with Town05 Long, amount=120", flush=True)
+        if os.environ["BENCHMARK"] == "longest6":
+            amount = 500
+            print("----------------Eval with Longest6, amount=500", flush=True)
         new_actors = CarlaDataProvider.request_new_batch_actors('vehicle.*',
                                                                 amount,
                                                                 carla.Transform(),
