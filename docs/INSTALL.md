@@ -80,6 +80,8 @@ pip install dictor
 pip install gym==0.17.2
 pip install stable-baselines3==0.8.0
 pip install numpy --upgrade
+
+pip install shapely==1.6.4.post2  --force-reinstall  ### Important! Higher version of shapely may make the CARLA crash mysteriously!
 ```
 
 **h. Install Carla. (From Roach)**
