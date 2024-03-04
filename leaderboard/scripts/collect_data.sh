@@ -16,6 +16,7 @@ export TM_PORT=$2
 export DEBUG_CHALLENGE=0
 export REPETITIONS=1
 export RESUME=$4
+export BENCHMARK=COLLECT_DATA
 
 
 # Roach data collection
